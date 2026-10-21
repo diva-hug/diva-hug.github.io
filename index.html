@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1120">
+  <title>Divakar Putta | AI Engineer</title>
+  <meta name="description" content="Divakar Putta's portfolio — AI Engineer focused on Python, Machine Learning, Generative AI, RAG and AI Agents.">
+
+  <style>
+    :root {
+      --bg: #0b1120;
+      --panel: #111c30;
+      --text: #f1f5f9;
+      --muted: #a9b7cc;
+      --blue: #60a5fa;
+      --cyan: #67e8f9;
+      --border: #26364d;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { color: var(--cyan); }
+
+    .container { width: min(1080px, 90%); margin: auto; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(11, 17, 32, 0.95);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 12px 0;
+    }
+
+    .logo { font-size: 20px; font-weight: bold; color: white; }
+    .logo span { color: var(--cyan); }
+
+    .nav-links { display: flex; gap: 20px; flex-wrap: wrap; }
+    .nav-links a { color: var(--muted); font-size: 14px; }
+
+    .hero {
+      min-height: 76vh;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      align-items: center;
+      gap: 45px;
+      padding: 85px 0;
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 65px);
+      line-height: 1.12;
+      margin: 18px 0;
+      letter-spacing: -2px;
+    }
+
+    h1 span, .gradient {
+      background: linear-gradient(90deg, var(--blue), var(--cyan));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p, .section-intro { color: var(--muted); }
+
+    .buttons { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 19px;
+      border-radius: 8px;
+      border: 1px solid var(--blue);
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .btn-primary { background: var(--blue); color: #07111f; }
+    .btn-secondary { color: var(--text); border-color: var(--border); }
+
+    .profile-card {
+      background: radial-gradient(circle at top, #203b60, var(--panel) 65%);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 20px 70px #0003;
+    }
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid var(--blue);
+      display: grid;
+      place-items: center;
+      margin: 0 auto 22px;
+      font-size: 50px;
+      font-weight: bold;
+      color: var(--cyan);
+      background: #172b46;
+    }
+
+    .profile-card p { color: var(--muted); font-size: 14px; }
+
+    section { padding: 75px 0; scroll-margin-top: 80px; }
+
+    .section-title { font-size: 32px; margin-bottom: 10px; }
+    .section-intro { margin-bottom: 30px; max-width: 720px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 24px;
+    }
+
+    .card h3 { margin-bottom: 10px; color: #e6f3ff; }
+    .card p { color: var(--muted); font-size: 14px; }
+    .card ul { padding-left: 20px; color: var(--muted); font-size: 14px; }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 16px; }
+
+    .tag {
+      padding: 5px 10px;
+      background: #1a2b43;
+      border: 1px solid #304966;
+      color: #c9e4ff;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+
+    .project-links { margin-top: 18px; font-size: 14px; }
+
+    .contact-card { text-align: center; }
+    .contact-card p { margin: 12px 0 20px; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 25px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .hero { grid-template-columns: 1fr; padding: 65px 0; gap: 30px; }
+      .grid { grid-template-columns: 1fr; }
+      .nav-links { gap: 12px; }
+      .nav-links a { font-size: 12px; }
+      h1 { letter-spacing: -1px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="#home">Divakar<span>.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container hero" id="home">
+      <div>
+        <div class="eyebrow">AI Engineer | Generative AI</div>
+        <h1>Hi, I'm <span>Divakar Putta.</span></h1>
+        <h2 style="font-size:22px; margin-bottom:15px;">Building practical AI-powered applications.</h2>
+        <p>
+          I work with Python, Machine Learning, Large Language Models,
+          Retrieval-Augmented Generation (RAG), and AI agent workflows.
+          I enjoy turning ideas into useful applications and learning
+          through hands-on projects.
+        </p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#projects">Explore My Projects</a>
+          <a class="btn btn-secondary" href="https://github.com/diva-hug" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <!-- Later, upload your photo as profile.jpg and replace this avatar with an img tag. -->
+        <div class="avatar">DP</div>
+        <h2>Divakar Putta</h2>
+        <p>AI Engineer Portfolio</p>
+        <div class="tags" style="justify-content:center;">
+          <span class="tag">Python</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Generative AI</span>
+          <span class="tag">AI Agents</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" style="background:#0e1728;">
+      <div class="container">
+        <h2 class="section-title">About <span class="gradient">Me</span></h2>
+        <p class="section-intro">
+          I am an AI/ML professional focused on developing practical
+          applications using data science, machine learning, and generative AI.
+          My project work includes data analysis, predictive modelling,
+          document retrieval, and AI-powered customer support. I am continuing
+          to strengthen my engineering skills by building, testing, and
+          documenting real working projects.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-intro">Technologies and concepts I use in my projects.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Programming & Data</h3>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Data Cleaning</span>
+            <span class="tag">EDA</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Machine Learning</h3>
+          <div class="tags">
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">Preprocessing</span>
+            <span class="tag">Feature Engineering</span>
+            <span class="tag">Classification</span>
+            <span class="tag">Model Evaluation</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Generative AI</h3>
+          <div class="tags">
+            <span class="tag">LLMs</span>
+            <span class="tag">RAG</span>
+            <span class="tag">Sentence Transformers</span>
+            <span class="tag">ChromaDB</span>
+            <span class="tag">FAISS</span>
+            <span class="tag">LangGraph</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Development & Deployment</h3>
+          <div class="tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Git & GitHub</span>
+            <span class="tag">Render</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Groq API</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" style="background:#0e1728;">
+      <div class="container">
+        <h2 class="section-title">Featured <span class="gradient">Projects</span></h2>
+        <p class="section-intro">
+          Selected projects demonstrating my work across data science,
+          machine learning, retrieval, and AI agents.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>01. VoiceMind AI</h3>
+            <p>
+              An AI customer-support application combining a voice agent,
+              a policy knowledge base, semantic retrieval, and an API backend
+              to answer customer questions.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">RAG</span>
+              <span class="tag">FAISS</span><span class="tag">Groq</span>
+              <span class="tag">ElevenLabs</span><span class="tag">FastAPI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/diva-hug/VoiceMind_AI" target="_blank" rel="noopener noreferrer">View source code ↗</a>
+              ·
+              <a href="https://voicemind-ai.onrender.com/" target="_blank" rel="noopener noreferrer">API health check ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>02. Zepto AI/ML Capstone</h3>
+            <p>
+              An integrated capstone combining data collection and analysis,
+              machine-learning classification, and a policy question-answering
+              system using retrieval-augmented generation.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Pandas</span>
+              <span class="tag">Scikit-learn</span><span class="tag">SQL</span>
+              <span class="tag">ChromaDB</span><span class="tag">LangGraph</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/diva-hug" target="_blank" rel="noopener noreferrer">Find my GitHub repositories ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>03. CodeMind AI</h3>
+            <p>
+              A multi-agent coding assistant designed to coordinate planning,
+              research, code generation, testing, and review through a
+              structured workflow.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">LangGraph</span>
+              <span class="tag">Groq</span><span class="tag">AI Agents</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/diva-hug" target="_blank" rel="noopener noreferrer">Find my GitHub repositories ↗</a>
+            </div>
+            <p style="margin-top:10px;">Project status: polishing and testing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="container">
+      <h2 class="section-title">Education & Certifications</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>AI & Machine Learning Program</h3>
+          <p>Vishlesan i-Hub, IIT Patna, in collaboration with Masai</p>
+          <p>March 2026 – September 2026</p>
+        </div>
+        <div class="card">
+          <h3>Master of Business Administration</h3>
+          <p>Sri Venkateswara University</p>
+          <p>2018 – 2020</p>
+        </div>
+        <div class="card">
+          <h3>Additional Learning</h3>
+          <ul>
+            <li>OpenAI Academy — AI at Work pathway</li>
+            <li>Fundamentals of AI — CloudML</li>
+            <li>Machine Learning — CloudML</li>
+          </ul>
+          <p style="margin-top:10px;">List only credentials and completion statuses you can verify.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="background:#0e1728;">
+      <div class="container contact-card">
+        <h2 class="section-title">Let's <span class="gradient">Connect</span></h2>
+        <p>Interested in AI engineering, machine learning, and building useful AI applications.</p>
+        <div class="buttons" style="justify-content:center;">
+          <a class="btn btn-primary" href="https://github.com/diva-hug" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <!-- Replace the URL below with your actual LinkedIn profile URL. -->
+          <a class="btn btn-secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Divakar Putta · AI Engineer Portfolio</div>
+  </footer>
+</body>
+</html>
