@@ -546,6 +546,7 @@
     @media (max-width: 700px) {
       .nav-inner { min-height: 68px; }
       .menu-toggle { display: inline-flex; align-items: center; justify-content: center; }
+
       .nav-links {
         display: none;
         position: absolute;
@@ -585,7 +586,6 @@
     }
   </style>
 </head>
-
 <body>
   <header class="navbar">
     <div class="container nav-inner">
@@ -655,9 +655,13 @@
         <div class="profile-wrap reveal">
           <div class="profile-glow"></div>
           <div class="profile-frame">
-            <img src="profile.png" alt="Divakar Putta profile photo"
-                 onerror="this.style.display='none'; this.parentElement.style.aspectRatio='4/5'; this.parentElement.style.background='linear-gradient(145deg,#142b3c,#101829)';">
+            <img
+              src="profile.png"
+              alt="Divakar Putta profile photo"
+              onerror="this.style.display='none'; this.parentElement.style.aspectRatio='4/5'; this.parentElement.style.background='linear-gradient(145deg,#142b3c,#101829)';"
+            >
           </div>
+
           <div class="profile-label">
             <strong><i class="fa-solid fa-code"></i> AI & Machine Learning</strong>
             Building intelligent applications
@@ -666,6 +670,7 @@
       </div>
     </section>
 
+    <!-- TECHNOLOGY STRIP -->
     <div class="tech-strip">
       <div class="container tech-strip-inner">
         <span><i class="fa-brands fa-python"></i> Python</span>
@@ -693,12 +698,14 @@
               My goal is to create practical systems that combine intelligent
               responses with reliable application workflows.
             </p>
+
             <p>
               Through hands-on projects, I've worked with Python, vector search,
               embeddings, API development, LLM integrations, and multi-agent
               orchestration. I enjoy learning by building, testing, debugging,
               and improving end-to-end applications.
             </p>
+
             <p>
               I'm continuing to strengthen my engineering skills and explore
               opportunities to contribute to meaningful AI products and teams.
@@ -841,17 +848,21 @@
         </div>
 
         <div class="projects-grid">
+
+          <!-- PROJECT 1: VOICEMIND AI -->
           <article class="project-card reveal">
             <div class="project-top">
               <div class="project-icon"><i class="fa-solid fa-headset"></i></div>
               <span class="project-number">PROJECT 01</span>
             </div>
+
             <h3>VoiceMind AI</h3>
             <p>
               An AI customer-support application combining a conversational voice
               agent with policy-based retrieval. Includes a FastAPI support
               endpoint, semantic document retrieval, and a Groq-powered response backend.
             </p>
+
             <div class="skill-tags">
               <span class="tag">Python</span>
               <span class="tag">RAG</span>
@@ -860,7 +871,337 @@
               <span class="tag">Groq</span>
               <span class="tag">ElevenLabs</span>
             </div>
-            <div class="project-links">
 
-              <!-- ADDED: ELEVENLABS VOICE AGENT LINK -->
-              <a href="https://elevenlabs.io/app/talk-to?agent_id=agent_4701m47rs3r4ef6888252rhn6nx7&amp;branch_id=agtbrch_6001m47rs50te699q823z21krm91" target="_blank" rel
+            <div class="project-links">
+              <a
+                href="https://elevenlabs.io/app/talk-to?agent_id=agent_4701m47rs3r4ef6888252rhn6nx7&amp;branch_id=agtbrch_6001m47rs50te699q823z21krm91"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-microphone"></i> Try Voice Agent
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+
+              <a href="https://github.com/diva-hug/VoiceMind_AI" target="_blank" rel="noopener noreferrer">
+                GitHub <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a href="https://voicemind-ai.onrender.com/" target="_blank" rel="noopener noreferrer">
+                Live API <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: CODEMIND AI -->
+          <article class="project-card reveal">
+            <div class="project-top">
+              <div class="project-icon"><i class="fa-solid fa-code"></i></div>
+              <span class="project-number">PROJECT 02</span>
+            </div>
+
+            <h3>CodeMind AI</h3>
+            <p>
+              A multi-agent coding assistant concept using LangGraph to organize
+              planning, research, code generation, testing, and code review.
+              The workflow uses an LLM backend to help generate and validate code.
+            </p>
+
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">LangGraph</span>
+              <span class="tag">Groq</span>
+              <span class="tag">AI Agents</span>
+              <span class="tag">Testing</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/diva-hug" target="_blank" rel="noopener noreferrer">
+                GitHub Profile <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: ZEpto AI/ML -->
+          <article class="project-card reveal">
+            <div class="project-top">
+              <div class="project-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+              <span class="project-number">PROJECT 03</span>
+            </div>
+
+            <h3>Retail Data & AI/ML Projects</h3>
+            <p>
+              Hands-on work with retail-style data analysis and AI/ML concepts,
+              including data collection, SQL storage, exploratory analysis,
+              and policy-question answering with retrieval-based approaches.
+            </p>
+
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">ChromaDB</span>
+              <span class="tag">RAG</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/diva-hug" target="_blank" rel="noopener noreferrer">
+                Explore GitHub <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: OPSMIND -->
+          <article class="project-card reveal">
+            <div class="project-top">
+              <div class="project-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+              <span class="project-number">PROJECT 04</span>
+            </div>
+
+            <h3>OpsMind RAG Assistant</h3>
+            <p>
+              A retrieval-augmented knowledge assistant concept designed to
+              search operational documentation and retrieve relevant context
+              to support more grounded answers.
+            </p>
+
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">RAG</span>
+              <span class="tag">Embeddings</span>
+              <span class="tag">Vector Search</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/diva-hug" target="_blank" rel="noopener noreferrer">
+                Explore GitHub <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="project-note">
+          Project details and repository links can be updated as each project is published.
+        </p>
+      </div>
+    </section>
+        <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">My learning journey</span>
+          <h2>Education & <span class="accent">Certifications</span></h2>
+          <p>My AI/ML learning journey and professional development.</p>
+        </div>
+
+        <div class="education-list">
+          <article class="education-card reveal">
+            <div class="education-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+              <h3>Artificial Intelligence and Machine Learning</h3>
+              <p>IIT Patna — Vishlesan i-Hub / Masai</p>
+              <p>Certification Program in Artificial Intelligence and Machine Learning.</p>
+            </div>
+            <span class="education-date">2026</span>
+          </article>
+        </div>
+
+        <div class="cert-box reveal">
+          <h3>Additional Certifications & Learning</h3>
+          <div class="cert-list">
+            <span class="tag">OpenAI Academy — AI Foundations Badge</span>
+            <span class="tag">CloudML 2026</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Power BI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <span class="eyebrow">Let's connect</span>
+          <h2>Let's Build Something <span class="accent">Intelligent</span></h2>
+          <p>
+            I'm interested in AI/ML opportunities, practical AI applications,
+            and connecting with people who are building useful technology.
+            Feel free to connect with me.
+          </p>
+
+          <div class="button-row" style="justify-content:center;">
+            <a
+              class="btn btn-primary"
+              href="https://www.linkedin.com/in/divakarputta/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+            </a>
+
+            <a
+              class="btn btn-secondary"
+              href="https://github.com/diva-hug"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i> View GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="currentYear"></span> Divakar Putta. Built with purpose.</p>
+
+      <div class="footer-socials">
+        <a
+          href="https://github.com/diva-hug"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/divakarputta/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <a href="#home" class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Mobile navigation menu
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute(
+          "aria-label",
+          isOpen ? "Close navigation" : "Open navigation"
+        );
+
+        const icon = menuToggle.querySelector("i");
+
+        if (icon) {
+          icon.className = isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars";
+        }
+      });
+
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.setAttribute("aria-label", "Open navigation");
+
+          const icon = menuToggle.querySelector("i");
+
+          if (icon) {
+            icon.className = "fa-solid fa-bars";
+          }
+        });
+      });
+    }
+
+    // Reveal sections as they enter the viewport
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+      const revealObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.1
+        }
+      );
+
+      revealElements.forEach((element) => {
+        revealObserver.observe(element);
+      });
+    } else {
+      revealElements.forEach((element) => {
+        element.classList.add("show");
+      });
+    }
+
+    // Back-to-top button
+    const backTop = document.getElementById("backTop");
+
+    function updateBackTop() {
+      if (backTop) {
+        backTop.classList.toggle("visible", window.scrollY > 400);
+      }
+    }
+
+    window.addEventListener("scroll", updateBackTop, { passive: true });
+    updateBackTop();
+
+    // Automatically update footer year
+    const currentYear = document.getElementById("currentYear");
+
+    if (currentYear) {
+      currentYear.textContent = new Date().getFullYear();
+    }
+
+    // Highlight the active navigation section
+    const pageSections = document.querySelectorAll("main section[id]");
+    const sectionLinks = document.querySelectorAll(".nav-links a[href^='#']");
+
+    if ("IntersectionObserver" in window) {
+      const sectionObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              sectionLinks.forEach((link) => {
+                link.classList.toggle(
+                  "active",
+                  link.getAttribute("href") === "#" + entry.target.id
+                );
+              });
+            }
+          });
+        },
+        {
+          rootMargin: "-25% 0px -60% 0px"
+        }
+      );
+
+      pageSections.forEach((section) => {
+        sectionObserver.observe(section);
+      });
+    }
+  </script>
+</body>
+</html>
